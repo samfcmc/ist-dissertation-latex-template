@@ -26,7 +26,7 @@ If you don't want to fork, you can download a zip of the repo.
 
 Once you have a copy of this repo, you can start creating sections, add a bibliography, etc.
 
-### Edit the cover
+### Cover
 The cover file (```cover.tex```) has information such as title, supervisors, examination committee, etc.
 Edit that file according to what makes sense to your dissertation.
 
