@@ -1,5 +1,5 @@
 # ist-dissertation-latex-template
-Master dissertation Latex template for Instituto Superior Técnico (Portugal).
+Master dissertation Latex template for [Instituto Superior Técnico](http://tecnico.ulisboa.pt/) (Portugal).
 If you are a student in IST and you want to write your dissertation using Latex this can be a good starting point.
 This template tries to follow this school's specification that you can get here:
 * [Dissertation guidelines](http://da.tecnico.ulisboa.pt/files/sites/33/guia-preparacao-dissertacao-13_14_2.pdf)
