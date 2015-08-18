@@ -12,3 +12,6 @@ cd ..
 cd chapters
 rm -f $FILES
 cd ..
+cd appendix
+rm -f $FILES
+cd ..
