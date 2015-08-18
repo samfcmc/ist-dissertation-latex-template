@@ -5,7 +5,7 @@ This template tries to follow this school's specification that you can get here:
 * [Dissertation guidelines](http://da.tecnico.ulisboa.pt/files/sites/33/guia-preparacao-dissertacao-13_14_2.pdf)
 
 I cannot garantee you that this template is 100% right. I recommend that you talk to your advisors to check it first.
-I am not responsible if something goes wrong if you choose to use this template.
+I am not responsible for something going wrong if you choose to use this template.
 
 Focus on your thesis and not on the template.
 
@@ -18,7 +18,45 @@ I use the following ones for Atom:
   * [latex](https://atom.io/packages/latex)
   * [latexer](https://atom.io/packages/latexer)
 
-## Compile:
+## Usage
+To use this template you can just simply fork this repo and start working on it.
+
+If you don't want to fork you can download a zip of the repo.
+
+Once you have a copy of this repo you can
+start creating sections, adding bibliography, etc.
+
+### Create a new section
+To create a new section you first need to create a file in ```sections``` folder. The easiest way to do this is to create a copy of ```sections/new_section_template.tex``` file:
+```
+$ cp sections/new_section_template.tex sections/mysection.tex
+```
+
+In the new file change the section's title and label.
+
+Now you just need to include this new section in the main file. Open ```disseration.tex``` file and below a comment ```% Sections``` include your section where it makes sense to you
+```latex
+% Sections
+...
+\include{sections/mysection}
+...
+```
+
+Now get some inspiration and write its content.
+
+### Write the abstract
+The abstract is located at ```sections/abstract.tex```. Open that file in your favorite text editor and start writing your abstract and also define the keywords.
+
+### Write the acknowledgments
+Along the way some people helped you. If you want to show them some love this is the right place for it. Open the file ```sections/acknowledgments.tex```and start say thanks to everyone.
+
+Also, it would be nice if you buy, at least, a beer to whoever supported you :)
+(Including the one that provided you this awesome template)
+
+### Add a new image
+Image files go to ```images``` directory. Place your files here and include them in wherever makes sense.
+
+## Compile
 To create the final pdf you have two ways to do it:
 
 ### Using the text editor
@@ -37,5 +75,7 @@ $ sh clean.sh
 ```
 
 ## Contribute ;)
+Thanks to [@mvpgomes](https://github.com/mvpgomes) that started this template and did most of the work. I am just publishing it on github and improving a bit its structure.
+
 If you notice that something is missing you can open a issue and make a pull request.
 Feel free to contribute :)
