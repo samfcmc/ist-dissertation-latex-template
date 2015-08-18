@@ -1,40 +1,42 @@
 # ist-dissertation-latex-template
 Master dissertation Latex template for [Instituto Superior Técnico](http://tecnico.ulisboa.pt/) (Portugal).
-If you are a student in IST and you want to write your dissertation using Latex this can be a good starting point.
+If you are a student in IST and you want to write your dissertation using Latex, this can be a good starting point.
 This template tries to follow this school's specification that you can get here:
 * [Dissertation guidelines](http://da.tecnico.ulisboa.pt/files/sites/33/guia-preparacao-dissertacao-13_14_2.pdf)
 
-I cannot garantee you that this template is 100% right. I recommend that you talk to your advisors to check it first.
-I am not responsible for something going wrong if you choose to use this template.
+I cannot guarantee you that this template is 100% right.
+I recommend that you talk to your advisors to check it first.
+I am not responsible for something going wrong, if you choose to use this template.
 
 Focus on your thesis and not on the template.
 
 ## Requirements:
 * Latex: This will depend on your Operating System. You have to check how to install all Latex packages for your OS.
 * Any text editor (I use [Atom](https://atom.io/))
-* Latex plugins for your text editor (This is optional but it will make your life easier).
+* Latex plugins for your text editor (this is optional, but it will make your life easier).
 I use the following ones for Atom:
   * [language-latex](https://atom.io/packages/language-latex)
   * [latex](https://atom.io/packages/latex)
   * [latexer](https://atom.io/packages/latexer)
 
 ## Usage
-To use this template you can just simply fork this repo and start working on it.
+To use this template, you can simply fork this repo and start working on it.
 
-If you don't want to fork you can download a zip of the repo.
+If you don't want to fork, you can download a zip of the repo.
 
-Once you have a copy of this repo you can
-start creating sections, adding bibliography, etc.
+Once you have a copy of this repo, you can start creating sections, add a bibliography, etc.
 
 ### Create a new section
-To create a new section you first need to create a file in ```sections``` folder. The easiest way to do this is to create a copy of ```sections/new_section_template.tex``` file:
+To create a new section, you first need to create a file in ```sections``` folder.
+The easiest way to do this, is to create a copy of ```sections/new_section_template.tex``` file:
 ```
 $ cp sections/new_section_template.tex sections/mysection.tex
 ```
 
-In the new file change the section's title and label.
+In the new file, change the section's title and label.
 
-Now you just need to include this new section in the main file. Open ```disseration.tex``` file and below a comment ```% Sections``` include your section where it makes sense to you
+Now you just need to include this new section in the main file.
+Open ```dissertation.tex``` file and, below a comment ```% Sections```, include your section wherever it makes sense to you.
 ```latex
 % Sections
 ...
@@ -45,40 +47,47 @@ Now you just need to include this new section in the main file. Open ```disserat
 Now get some inspiration and write its content.
 
 ### Write the abstract
-The abstract is located at ```sections/abstract.tex```. Open that file in your favorite text editor and start writing your abstract and also define the keywords.
+The abstract is located at ```sections/abstract.tex```.
+Open that file in your favorite text editor and start writing your abstract and also defining the keywords.
 
 ### Write the acknowledgments
-Along the way some people helped you. If you want to show them some love this is the right place for it. Open the file ```sections/acknowledgments.tex```and start say thanks to everyone.
+Along the way, some people helped you.
+If you want to show them some love, this is the right place for it.
+Open the file ```sections/acknowledgments.tex```and say thanks to everyone.
 
 Also, it would be nice if you buy, at least, a beer to whoever supported you :)
 (Including the one that provided you this awesome template)
 
 ### Add a new image
-Image files go to ```images``` directory. Place your files here and include them in wherever makes sense.
+Image files go to ```images``` directory.
+Place your files here and include them in wherever makes sense.
 
 ### Add bibliography
-The bibliography is in a bib file located at ```bibliography/dissertation.bib```. Put your bibliography there and cite it anywhere.
+The bibliography is in a bib file located at ```bibliography/dissertation.bib```.
+Put your bibliography there and cite it anywhere.
 
 ## Compile
-To create the final pdf you have two ways to do it:
+You have two ways to create the final pdf:
 
 ### Using the text editor
-It depends on the text editor you are using. If you are using atom and the latex plugin you just to press
+It depends on the text editor you are using.
+If you are using atom and the latex plugin, just press
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd>
 
 ### Using the provided scripts
-If you have the complete Latex environment installed you can run the ```toPDF.sh``` script to generate the PDF (```dissertation.pdf```):
+If you have the complete Latex environment installed, you can run the ```toPDF.sh``` script to generate the PDF (```dissertation.pdf```):
 ```
 $ sh toPDF.sh
 ```
 
-To clean all the mess (files generated by the compilation process) you can run ```clean.sh``` script:
+To clean all the mess (files generated by the compilation process), you can run ```clean.sh``` script:
 ```
 $ sh clean.sh
 ```
 
 ## Contribute ;)
-Thanks to [@mvpgomes](https://github.com/mvpgomes) that started this template and did most of the work. I am just publishing it on github and improving a bit its structure.
+Thanks to [@mvpgomes](https://github.com/mvpgomes) that started this template and did most of the work.
+I am just publishing it on github and improving its structure a bit.
 
-If you notice that something is missing you can open a issue and make a pull request.
+If you notice that something is missing, you can open an issue and make a pull request.
 Feel free to contribute :)
