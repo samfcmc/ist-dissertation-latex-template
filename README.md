@@ -26,14 +26,14 @@ If you don't want to fork you can download a zip of the repo.
 Once you have a copy of this repo you can
 start creating sections, adding bibliography, etc.
 
-### Edit the cover
+### Cover
 The cover file (```cover.tex```) has information such as title, supervisors, examination committee, etc. Edit that file According to what makes sense to your disseration.
 
-### Write the abstract
+### Abstract
 According to the specification you have to write the abstract in english and portuguese.
 The english is located at ```abstract/abstract-en.tex``` and the portuguese ```abstract/abstract-pt.tex```. Just edit those files.
 
-### Write the acknowledgments
+### Acknowledgments
 Along the way some people helped you. If you want to show them some love this is the right place for it. Open the file ```acknowledgments/acknowledgments.tex```and start say thanks to everyone.
 
 Anyway, this is optional. If you don't want to have this on your dissertation just comment the include in the ```dissertation.tex``` file:
@@ -48,8 +48,9 @@ Anyway, this is optional. If you don't want to have this on your dissertation ju
 Also, it would be nice if you buy, at least, a beer to whoever supported you :)
 (Including the one that provided you this awesome template)
 
-### Create a new chapter
-To create a new chapter you first need to create a file in ```chapters``` folder. The easiest way to do this is to create a copy of ```chapters/new_chapter_template.tex``` file:
+### Chapters
+Chapters are located at ```chapters```folder.
+To create a new chapter you first need to create a file in this folder. The easiest way to do this is to create a copy of ```chapters/new_chapter_template.tex``` file:
 ```
 $ cp chapters/new_chapter_template.tex chapters/mychapter.tex
 ```
@@ -66,11 +67,29 @@ Now you just need to include this new chapter in the main file. Open ```disserat
 
 Now get some inspiration and write its content.
 
-### Add a new image
+### Images
 Image files go to ```images``` directory. Place your files here and include them in wherever makes sense.
 
-### Add bibliography
+### Bibliography
 The bibliography is in a bib file located at ```bibliography/dissertation.bib```. Put your bibliography there and cite it anywhere.
+
+### Appendix
+Appendix chapters are located at ```appendix```folder.
+To create an appendix chapter, create a file in this folder. The easiest way is to copy the ```new_appendix_chapter_template.tex``` file.
+```
+$ cp appendix/new_appendix_chapter_template.tex appendix/mynewchapter.tex
+```
+
+Edit this file to set the chapter's title and create its content.
+
+Now you have to include this new file in the main dissertation file (```disseration.tex```). Open it and include the new chapter's file below the appendix beginning
+```latex
+% Appendix
+\appendix
+...
+\include{appendix/mynewchapter}
+...
+```
 
 ## Compile
 To create the final pdf you have two ways to do it:
