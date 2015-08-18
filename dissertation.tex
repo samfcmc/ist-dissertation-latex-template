@@ -13,6 +13,7 @@
 \usepackage[margin=2.5cm]{geometry}
 % Line spacing package
 \usepackage{graphicx, helvet, inputenc, setspace}
+\usepackage[portuguese,english]{babel}
 % Set main font to Arial
 \renewcommand{\familydefault}{\sfdefault}
 % Define keywords macro
@@ -26,18 +27,22 @@
 % Page numbering
 \pagestyle{plain}
 % ------------------------------------------
-%  CLOUD4THINGS MASTER THESIS DISSERTATION
+% MASTER THESIS DISSERTATION
 % ------------------------------------------
 \begin{document}
 \include{cover}
-\include{sections/acknowledgments}
-\include{sections/abstract}
+
+\input{acknowledgments/acknowledgments.tex}
+
+\input{abstract/abstract-en.tex}
+\input{abstract/abstract-pt.tex}
+
 \tableofcontents
 
-% Sections
-\include{sections/introduction}
-\include{sections/evaluation}
-\include{sections/conclusion}
+% Chapters
+\include{chapters/introduction}
+\include{chapters/evaluation}
+\include{chapters/conclusion}
 
 \bibliographystyle{ieeetr}
 \bibliography{bibliography/dissertation}

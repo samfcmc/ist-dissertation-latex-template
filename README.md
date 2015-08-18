@@ -4,7 +4,7 @@ If you are a student in IST and you want to write your dissertation using Latex 
 This template tries to follow this school's specification that you can get here:
 * [Dissertation guidelines](http://da.tecnico.ulisboa.pt/files/sites/33/guia-preparacao-dissertacao-13_14_2.pdf)
 
-I cannot garantee you that this template is 100% right. I recommend that you talk to your advisors to check it first.
+I cannot guarantee you that this template is 100% right. I recommend that you talk to your advisors to check it first.
 I am not responsible for something going wrong if you choose to use this template.
 
 Focus on your thesis and not on the template.
@@ -26,32 +26,45 @@ If you don't want to fork you can download a zip of the repo.
 Once you have a copy of this repo you can
 start creating sections, adding bibliography, etc.
 
-### Create a new section
-To create a new section you first need to create a file in ```sections``` folder. The easiest way to do this is to create a copy of ```sections/new_section_template.tex``` file:
+### Edit the cover
+The cover file (```cover.tex```) has information such as title, supervisors, examination committee, etc. Edit that file According to what makes sense to your disseration.
+
+### Write the abstract
+According to the specification you have to write the abstract in english and portuguese.
+The english is located at ```abstract/abstract-en.tex``` and the portuguese ```abstract/abstract-pt.tex```. Just edit those files.
+
+### Write the acknowledgments
+Along the way some people helped you. If you want to show them some love this is the right place for it. Open the file ```acknowledgments/acknowledgments.tex```and start say thanks to everyone.
+
+Anyway, this is optional. If you don't want to have this on your dissertation just comment the include in the ```dissertation.tex``` file:
+```latex
+...
+\begin{document}
+\include{cover}
+
+% \input{acknowledgments/acknowledgments.tex}
 ```
-$ cp sections/new_section_template.tex sections/mysection.tex
+
+Also, it would be nice if you buy, at least, a beer to whoever supported you :)
+(Including the one that provided you this awesome template)
+
+### Create a new chapter
+To create a new chapter you first need to create a file in ```chapters``` folder. The easiest way to do this is to create a copy of ```chapters/new_chapter_template.tex``` file:
+```
+$ cp chapters/new_chapter_template.tex chapters/mychapter.tex
 ```
 
 In the new file change the section's title and label.
 
-Now you just need to include this new section in the main file. Open ```disseration.tex``` file and below a comment ```% Sections``` include your section where it makes sense to you
+Now you just need to include this new chapter in the main file. Open ```disseration.tex``` file and below the comment ```% Chapters``` include your chapter where it makes sense to you
 ```latex
-% Sections
+% Chapters
 ...
-\include{sections/mysection}
+\include{chapters/mysection}
 ...
 ```
 
 Now get some inspiration and write its content.
-
-### Write the abstract
-The abstract is located at ```sections/abstract.tex```. Open that file in your favorite text editor and start writing your abstract and also define the keywords.
-
-### Write the acknowledgments
-Along the way some people helped you. If you want to show them some love this is the right place for it. Open the file ```sections/acknowledgments.tex```and start say thanks to everyone.
-
-Also, it would be nice if you buy, at least, a beer to whoever supported you :)
-(Including the one that provided you this awesome template)
 
 ### Add a new image
 Image files go to ```images``` directory. Place your files here and include them in wherever makes sense.
