@@ -56,6 +56,9 @@ Also, it would be nice if you buy, at least, a beer to whoever supported you :)
 ### Add a new image
 Image files go to ```images``` directory. Place your files here and include them in wherever makes sense.
 
+### Add bibliography
+The bibliography is in a bib file located at ```bibliography/dissertation.bib```. Put your bibliography there and cite it anywhere.
+
 ## Compile
 To create the final pdf you have two ways to do it:
 
