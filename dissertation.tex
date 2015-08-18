@@ -1,0 +1,41 @@
+% ------------------------------------------
+%  INFORMATION AND SOFTWARE ENGINEERING
+% ------------------------------------------
+%  MASTER THESIS DISSERTATION
+% ------------------------------------------
+% Author:
+%
+% Advisors:
+%
+% ------------------------------------------
+\documentclass[10pt,twoside,a4paper]{report}
+% Set document margins to 1in in all sides
+\usepackage[margin=2.5cm]{geometry}
+% Line spacing package
+\usepackage{graphicx, helvet, inputenc, setspace}
+% Set main font to Arial
+\renewcommand{\familydefault}{\sfdefault}
+% Define keywords macro
+\providecommand{\keywords}[1]{\textbf{Keywords:} #1}
+% Section numbering depth
+\setcounter{secnumdepth}{2}
+% Table of contents depth
+\setcounter{tocdepth}{3}
+% Set line spacing to 1.5cm
+\onehalfspacing
+% Page numbering
+\pagestyle{plain}
+% ------------------------------------------
+%  CLOUD4THINGS MASTER THESIS DISSERTATION
+% ------------------------------------------
+\begin{document}
+\include{cover}
+\include{sections/acknowledgments}
+\include{sections/abstract}
+\tableofcontents
+\include{sections/introduction}
+\include{sections/evaluation}
+\include{sections/conclusion}
+\bibliographystyle{ieeetr}
+\bibliography{bibliography/dissertation}
+\end{document}
