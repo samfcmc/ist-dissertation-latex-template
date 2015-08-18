@@ -1,40 +1,44 @@
 # ist-dissertation-latex-template
 Master dissertation Latex template for [Instituto Superior Técnico](http://tecnico.ulisboa.pt/) (Portugal).
-If you are a student in IST and you want to write your dissertation using Latex this can be a good starting point.
+If you are a student in IST and you want to write your dissertation using Latex, this can be a good starting point.
 This template tries to follow this school's specification that you can get here:
 * [Dissertation guidelines](http://da.tecnico.ulisboa.pt/files/sites/33/guia-preparacao-dissertacao-13_14_2.pdf)
 
-I cannot guarantee you that this template is 100% right. I recommend that you talk to your advisors to check it first.
-I am not responsible for something going wrong if you choose to use this template.
+I cannot guarantee you that this template is 100% right.
+I recommend that you talk to your advisors to check it first.
+I am not responsible for something going wrong, if you choose to use this template.
 
 Focus on your thesis and not on the template.
 
 ## Requirements:
 * Latex: This will depend on your Operating System. You have to check how to install all Latex packages for your OS.
 * Any text editor (I use [Atom](https://atom.io/))
-* Latex plugins for your text editor (This is optional but it will make your life easier).
+* Latex plugins for your text editor (this is optional, but it will make your life easier).
 I use the following ones for Atom:
   * [language-latex](https://atom.io/packages/language-latex)
   * [latex](https://atom.io/packages/latex)
   * [latexer](https://atom.io/packages/latexer)
 
 ## Usage
-To use this template you can just simply fork this repo and start working on it.
+To use this template, you can simply fork this repo and start working on it.
 
-If you don't want to fork you can download a zip of the repo.
+If you don't want to fork, you can download a zip of the repo.
 
-Once you have a copy of this repo you can
-start creating sections, adding bibliography, etc.
+Once you have a copy of this repo, you can start creating sections, add a bibliography, etc.
 
 ### Cover
-The cover file (```cover.tex```) has information such as title, supervisors, examination committee, etc. Edit that file According to what makes sense to your disseration.
+The cover file (```cover.tex```) has information such as title, supervisors, examination committee, etc.
+Edit that file according to what makes sense to your dissertation.
 
 ### Abstract
 According to the specification you have to write the abstract in english and portuguese.
-The english is located at ```abstract/abstract-en.tex``` and the portuguese ```abstract/abstract-pt.tex```. Just edit those files.
+The english is located at ```abstract/abstract-en.tex``` and the portuguese ```abstract/abstract-pt.tex```.
+Just edit those files.
 
 ### Acknowledgments
-Along the way some people helped you. If you want to show them some love this is the right place for it. Open the file ```acknowledgments/acknowledgments.tex```and start say thanks to everyone.
+Along the way, some people helped you.
+If you want to show them some love, this is the right place for it.
+Open the file ```acknowledgments/acknowledgments.tex```and say thanks to everyone.
 
 Anyway, this is optional. If you don't want to have this on your dissertation just comment the include in the ```dissertation.tex``` file:
 ```latex
@@ -50,14 +54,17 @@ Also, it would be nice if you buy, at least, a beer to whoever supported you :)
 
 ### Chapters
 Chapters are located at ```chapters```folder.
-To create a new chapter you first need to create a file in this folder. The easiest way to do this is to create a copy of ```chapters/new_chapter_template.tex``` file:
+To create a new chapter, you first need to create a file in this folder.
+The easiest way to do this, is to create a copy of ```chapters/new_chapter_template.tex``` file:
 ```
 $ cp chapters/new_chapter_template.tex chapters/mychapter.tex
 ```
 
-In the new file change the section's title and label.
+In the new file, change the section's title and label.
 
-Now you just need to include this new chapter in the main file. Open ```disseration.tex``` file and below the comment ```% Chapters``` include your chapter where it makes sense to you
+Now you just need to include this new chapter in the main file.
+Open ```dissertation.tex``` file and, below a comment ```% Chapters```, include your chapter wherever it makes sense to you.
+
 ```latex
 % Chapters
 ...
@@ -68,10 +75,12 @@ Now you just need to include this new chapter in the main file. Open ```disserat
 Now get some inspiration and write its content.
 
 ### Images
-Image files go to ```images``` directory. Place your files here and include them in wherever makes sense.
+Image files go to ```images``` directory.
+Place your files here and include them in wherever makes sense.
 
 ### Bibliography
-The bibliography is in a bib file located at ```bibliography/dissertation.bib```. Put your bibliography there and cite it anywhere.
+The bibliography is in a bib file located at ```bibliography/dissertation.bib```.
+Put your bibliography there and cite it anywhere.
 
 ### Appendix
 Appendix chapters are located at ```appendix```folder.
@@ -92,25 +101,27 @@ Now you have to include this new file in the main dissertation file (```disserat
 ```
 
 ## Compile
-To create the final pdf you have two ways to do it:
+You have two ways to create the final pdf:
 
 ### Using the text editor
-It depends on the text editor you are using. If you are using atom and the latex plugin you just to press
+It depends on the text editor you are using.
+If you are using atom and the latex plugin, just press
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd>
 
 ### Using the provided scripts
-If you have the complete Latex environment installed you can run the ```toPDF.sh``` script to generate the PDF (```dissertation.pdf```):
+If you have the complete Latex environment installed, you can run the ```toPDF.sh``` script to generate the PDF (```dissertation.pdf```):
 ```
 $ sh toPDF.sh
 ```
 
-To clean all the mess (files generated by the compilation process) you can run ```clean.sh``` script:
+To clean all the mess (files generated by the compilation process), you can run ```clean.sh``` script:
 ```
 $ sh clean.sh
 ```
 
 ## Contribute ;)
-Thanks to [@mvpgomes](https://github.com/mvpgomes) that started this template and did most of the work. I am just publishing it on github and improving a bit its structure.
+Thanks to [@mvpgomes](https://github.com/mvpgomes) that started this template and did most of the work.
+I am just publishing it on github and improving its structure a bit.
 
-If you notice that something is missing you can open a issue and make a pull request.
+If you notice that something is missing, you can open an issue and make a pull request.
 Feel free to contribute :)
