@@ -35,7 +35,7 @@ According to the specification you have to write the abstract in english and por
 The english is located at ```abstract/abstract-en.tex``` and the portuguese ```abstract/abstract-pt.tex```.
 Just edit those files.
 
-### Write the acknowledgments
+### Acknowledgments
 Along the way, some people helped you.
 If you want to show them some love, this is the right place for it.
 Open the file ```acknowledgments/acknowledgments.tex```and say thanks to everyone.
