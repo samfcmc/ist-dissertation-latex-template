@@ -64,6 +64,7 @@ In the new file, change the section's title and label.
 
 Now you just need to include this new chapter in the main file.
 Open ```dissertation.tex``` file and, below a comment ```% Chapters```, include your chapter wherever it makes sense to you.
+
 ```latex
 % Chapters
 ...
