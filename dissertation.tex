@@ -12,9 +12,11 @@
 % Set document margins to 1in in all sides
 \usepackage[margin=2.5cm]{geometry}
 % Line spacing package
-\usepackage{graphicx, helvet, inputenc, setspace}
+\usepackage{graphicx, helvet, hyperref, inputenc, setspace}
 \usepackage[portuguese,english]{babel}
 \usepackage[acronym]{glossaries}
+% Built the glossary when the main file is builded.
+\makeglossaries
 % Set main font to Arial
 \renewcommand{\familydefault}{\sfdefault}
 % Define keywords macro
@@ -27,6 +29,11 @@
 \onehalfspacing
 % Page numbering
 \pagestyle{plain}
+
+% Glossary-File
+\input{glossary/glossary.tex}
+% Acronym-File
+\input{acronyms/acronyms.tex}
 
 % ------------------------------------------
 % MASTER THESIS DISSERTATION
@@ -57,5 +64,8 @@
 % Appendix
 \appendix
 \include{appendix/appendixa}
+
+% Glossary and Acronym List
+\printglossaries
 
 \end{document}
