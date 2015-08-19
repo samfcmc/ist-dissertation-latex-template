@@ -123,6 +123,27 @@ Now you have to include this new file in the main dissertation file (```disserat
 \include{appendix/mynewchapter}
 ...
 ```
+### Acronyms
+Acronyms definitions are located in the ```acronyms``` directory.
+To add a new acronym in your document you must define the new entry in the ```acronyms.tex``` file:
+```
+\newacronym{<label>}{<abbreviation>}{<full>}
+```
+To reference an acronym you can use the command ```\gls{<label>}``` to cite the acronym in the singular form, or ```\glspl{<label>}``` if you want to cite the acronym in the plural form.
+
+### Glossary
+Glossary definitions are located in the ```glossary``` directory.
+To add a new term in the glossary of your document you must define the new entry in the ```glossary.tex``` file:
+```
+\newglossaryentry{<label>}{<settings>}
+```
+The most common settings of a glossary entry are the ```name```, ```description``` and ```symbol```, as illustrated in this example:
+```
+ \newglossaryentry{<label>}{ name={name},
+                            description={description},
+                            symbol={symbol}}
+```
+To reference a term defined in your glossary you can use the command ```\gls{<label>}``` to cite the term in the singular form, or ```\glspl{<label>}``` if you want to cite the term in the plural form. To cite the description or symbol of an entry you can use the ```\glsdesc{<label>}``` and ```\glssymbol{<label>}```.
 
 ## Compile
 You have two ways to create the final pdf:
