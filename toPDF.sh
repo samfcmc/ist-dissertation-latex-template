@@ -1,7 +1,7 @@
 NAME=dissertation.tex
 pdflatex $NAME
 bibtex $NAME
-makeglossaries
+makeglossaries dissertation
 pdflatex $NAME
 pdflatex $NAME
 sh clean.sh
