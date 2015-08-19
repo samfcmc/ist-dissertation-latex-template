@@ -5,4 +5,3 @@ bibtex $NAME
 makeglossaries $BASENAME
 pdflatex $NAME
 pdflatex $NAME
-sh clean.sh

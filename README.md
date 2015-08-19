@@ -126,19 +126,27 @@ Now you have to include this new file in the main dissertation file (```disserat
 ### Acronyms
 Acronyms definitions are located in the ```acronyms``` directory.
 To add a new acronym in your document you must define the new entry in the ```acronyms.tex``` file:
-```
+```latex
 \newacronym{<label>}{<abbreviation>}{<full>}
 ```
-To reference an acronym you can use the command ```\gls{<label>}``` to cite the acronym in the singular form, or ```\glspl{<label>}``` if you want to cite the acronym in the plural form.
+To reference an acronym you can use
+```latex
+\gls{<label>}
+```
+to cite the acronym in the singular form, or
+```latex
+\glspl{<label>}
+```
+if you want to cite the acronym in the plural form.
 
 ### Glossary
 Glossary definitions are located in the ```glossary``` directory.
 To add a new term in the glossary of your document you must define the new entry in the ```glossary.tex``` file:
-```
+```latex
 \newglossaryentry{<label>}{<settings>}
 ```
 The most common settings of a glossary entry are the ```name```, ```description``` and ```symbol```, as illustrated in this example:
-```
+```latex
  \newglossaryentry{<label>}{ name={name},
                             description={description},
                             symbol={symbol}}
