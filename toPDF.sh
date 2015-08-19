@@ -1,5 +1,6 @@
+NAME=dissertation.tex
 pdflatex $NAME
 bibtex $NAME
 pdflatex $NAME
 pdflatex $NAME
-./clean.sh
+sh clean.sh
