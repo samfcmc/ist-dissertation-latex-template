@@ -1,0 +1,35 @@
+{
+  "name": "meic-dissertation-template",
+  "description": "Master dissertation Latex template for [Instituto Superior Técnico](http://tecnico.ulisboa.pt/) (Portugal). If you are a student in IST and you want to write your dissertation using Latex, this can be a good starting point. This template tries to follow this school's specification that you can get here: * [Dissertation guidelines](http://da.tecnico.ulisboa.pt/files/sites/33/guia-preparacao-dissertacao-13_14_2.pdf)",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samfcmc/ist-dissertation-latex-template.git"
+  },
+  "keywords": [
+    "latex",
+    "template",
+    "dissertation"
+  ],
+  "author": "Samuel Coelho & Marcus Gomes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samfcmc/ist-dissertation-latex-template/issues"
+  },
+  "homepage": "https://github.com/samfcmc/ist-dissertation-latex-template#readme",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-shell": "^1.1.2",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}
