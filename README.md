@@ -26,9 +26,33 @@ If you don't want to fork, you can download a zip of the repo.
 
 Once you have a copy of this repo, you can start creating sections, add a bibliography, etc.
 
+### Variables
+Some values, for instance, the dissertation's title, are defined in a file called ```variables.tex```.
+For instance, if you want to change the title, open this file and look for title's definition:
+```latex
+...
+\newcommand {\Title} {My Title}
+```
+Replace "My Title" by your actual title.
+
+You can also add your own variables.
+To define a new variable all you need to do is just to add a new line like this:
+```latex
+\newcommand {\VariableName} {Value}
+```
+Replace "VariableName" by its name and "Value" by the actual value.
+To use this variable in your document:
+```latex
+\VariableName
+```
+
+If you know how to define macros in Latex you can define as many as you want and anyway you want in this file.
+
 ### Cover
 The cover file (```cover.tex```) has information such as title, supervisors, examination committee, etc.
-Edit that file according to what makes sense to your dissertation.
+This file has the cover's layout.
+The values of title, subtitle, etc are defined in a file called ```variables.tex```.
+Edit that file according to what makes sense in your dissertation.
 
 ### Abstract
 According to the specification you have to write the abstract in english and portuguese.
