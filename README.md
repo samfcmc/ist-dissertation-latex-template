@@ -64,13 +64,11 @@ Along the way, some people helped you.
 If you want to show them some love, this is the right place for it.
 Open the file ```acknowledgments/acknowledgments.tex```and say thanks to everyone.
 
-Anyway, this is optional. If you don't want to have this on your dissertation just comment the include in the ```dissertation.tex``` file:
+Anyway, this is optional. If you don't want to have this on your dissertation, just open ```variables.tex``` file and put 0 as the value of the ```acknowledgments``` definition:
 ```latex
 ...
-\begin{document}
-\include{cover}
-
-% \input{acknowledgments/acknowledgments.tex}
+% Include or not include acknowledgments
+\def\acknowledgments{0}
 ```
 
 Also, it would be nice if you buy, at least, a beer to whoever supported you :)
