@@ -64,11 +64,11 @@ Along the way, some people helped you.
 If you want to show them some love, this is the right place for it.
 Open the file ```acknowledgments/acknowledgments.tex```and say thanks to everyone.
 
-Anyway, this is optional. If you don't want to have this on your dissertation, just open ```variables.tex``` file and put 0 as the value of the ```acknowledgments``` definition:
+Anyway, this is optional. If you don't want to have this on your dissertation, just open ```variables.tex``` file and put 0 as the value of the ```includeAcknowledgments``` definition:
 ```latex
 ...
 % Include or not include acknowledgments
-\def\acknowledgments{0}
+\def \includeAcknowledgments{0}
 ```
 
 Also, it would be nice if you buy, at least, a beer to whoever supported you :)
@@ -84,13 +84,13 @@ $ cp chapters/new_chapter_template.tex chapters/mychapter.tex
 
 In the new file, change the section's title and label.
 
-Now you just need to include this new chapter in the main file.
-Open ```dissertation.tex``` file and, below a comment ```% Chapters```, include your chapter wherever it makes sense to you.
+Now you just need to include this new chapter in the main file in ```chapters``` folder.
+Open ```chapters/main.tex``` file and add the include for the new chapter
 
 ```latex
 % Chapters
 ...
-\include{chapters/mysection}
+\include{chapters/mychapter}
 ...
 ```
 
@@ -150,6 +150,13 @@ The most common settings of a glossary entry are the ```name```, ```description`
                             symbol={symbol}}
 ```
 To reference a term defined in your glossary you can use the command ```\gls{<label>}``` to cite the term in the singular form, or ```\glspl{<label>}``` if you want to cite the term in the plural form. To cite the description or symbol of an entry you can use the ```\glsdesc{<label>}``` and ```\glssymbol{<label>}```.
+
+Since this is not mandatory, by default, it is not being included. If you want to include it in your dissertation, just set the value of ```includeGlossary``` variable in ```variables.tex``` file to ```1```.
+```latex
+...
+% Include or not include glossary
+\def \includeGlossary{1}
+```
 
 ## Compile
 You have three ways to create the final pdf:

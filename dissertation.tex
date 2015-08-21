@@ -1,6 +1,4 @@
 % ------------------------------------------
-%  INFORMATION AND SOFTWARE ENGINEERING
-% ------------------------------------------
 %  MASTER THESIS DISSERTATION
 % ------------------------------------------
 % Author:
@@ -15,7 +13,7 @@
 \usepackage{graphicx, helvet, hyperref, inputenc, setspace}
 \usepackage[portuguese,english]{babel}
 \usepackage[acronym]{glossaries}
-% Built the glossary when the main file is builded.
+% Built the glossary when the main file is built.
 \makeglossaries
 % Set main font to Arial
 \renewcommand{\familydefault}{\sfdefault}
@@ -44,7 +42,7 @@
 
 \include{cover}
 
-\if\acknowledgments 1
+\if\includeAcknowledgments 1
 \input{acknowledgments/acknowledgments.tex}
 \fi
 
@@ -56,10 +54,7 @@
 \listoffigures
 \printglossary[type=\acronymtype]
 
-% Chapters
-\include{chapters/introduction}
-\include{chapters/evaluation}
-\include{chapters/conclusion}
+\input{chapters/main.tex}
 
 \bibliographystyle{ieeetr}
 \bibliography{bibliography/dissertation}
@@ -69,6 +64,8 @@
 \include{appendix/appendixa}
 
 % Glossary and Acronym List
+\if\includeGlossary 1
 \printglossary
+\fi
 
 \end{document}
