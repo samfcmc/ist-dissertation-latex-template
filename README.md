@@ -190,6 +190,15 @@ $ grunt
 ```
 Now you can edit you LaTex document. When you save the changes, your document will be compiled automatically.
 
+NOTE: If you are using grunt you must not delete the ```toPDF.sh``` and ```clean.sh``` because it uses those scripts.
+
+### Using an online tool
+If you don't want to install anything and just want to use an online editor you can also use this template.
+
+For instance, [Overleaf](https://www.overleaf.com) is a latex online editor. You just need to create an account and import the files on this template to it.
+
+You can use any other online latex editor, but it must support glossaries package, that is being used to generate the acronyms list.
+
 ## Contribute ;)
 Thanks to [@mvpgomes](https://github.com/mvpgomes) that started this template and did most of the work.
 I am just publishing it on github and improving its structure a bit.
