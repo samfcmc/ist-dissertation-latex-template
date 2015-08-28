@@ -113,10 +113,11 @@ $ cp appendix/new_appendix_chapter_template.tex appendix/mynewchapter.tex
 
 Edit this file to set the chapter's title and create its content.
 
-Now you have to include this new file in the main dissertation file (```disseration.tex```). Open it and include the new chapter's file below the appendix beginning
+Now you have to include this new file in the main file (```appendix/main.tex```). Open it and include the new chapter's file below the appendix beginning
 ```latex
-% Appendix
-\appendix
+...
+% Appendix chapters entry point
+% Include the chapters below
 ...
 \include{appendix/mynewchapter}
 ...
