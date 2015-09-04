@@ -6,15 +6,15 @@
 % Advisors:
 %
 % ------------------------------------------
-\documentclass[10pt,twoside,a4paper]{report}
+\documentclass[10pt,twoside,openright,a4paper]{report}
 \usepackage[utf8]{inputenc}
 
 % Set document margins to 1in in all sides
 \usepackage[margin=2.5cm]{geometry}
 % Line spacing package
-\usepackage{graphicx, helvet, hyperref, inputenc, setspace}
+\usepackage{graphicx, helvet, hyperref, setspace}
 \usepackage[portuguese,english]{babel}
-\usepackage[acronym]{glossaries}
+\usepackage[acronym, toc]{glossaries}
 
 % Built the glossary when the main file is built.
 \makeglossaries
@@ -41,25 +41,48 @@
 % ------------------------------------------
 
 \begin{document}
+\pagenumbering{gobble}% Remove page numbers (and reset to 1)
+\clearpage
+\thispagestyle{empty}
 \input{variables.tex}
 
 \include{cover}
 
 \if\includeAcknowledgments 1
+\cleardoublepage
 \input{acknowledgments/acknowledgments.tex}
 \fi
 
-\input{abstract/abstract-en.tex}
-\input{abstract/abstract-pt.tex}
+\cleardoublepage
+\include{abstract/abstract-en}
+\cleardoublepage
+\include{abstract/abstract-pt}
 
+% Table of contents
+\cleardoublepage
 \tableofcontents
+\pagenumbering{arabic}% Arabic page numbers (and reset to 1)
+
+% List of tables
+\cleardoublepage
+\addcontentsline{toc}{chapter}{\listtablename}
 \listoftables
+
+% List of figures
+\cleardoublepage
+\addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures
+
+% List of acronyms
+\cleardoublepage
 \printglossary[type=\acronymtype]
 
+\cleardoublepage
 \input{chapters/main.tex}
 
+\cleardoublepage
 \bibliographystyle{ieeetr}
+\addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{bibliography/dissertation}
 
 % Appendix
