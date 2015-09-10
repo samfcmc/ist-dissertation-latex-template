@@ -22,6 +22,12 @@
 \renewcommand{\familydefault}{\sfdefault}
 % Define keywords macro
 \providecommand{\keywords}[1]{\textbf{Keywords:} #1}
+% Define the NewPage macro
+\newcommand*\NewPage{\newpage\null\thispagestyle{empty}\cleardoublepage}
+% Abstract-en page numbering
+\newcommand {\abstractEnglishPageNumber} {\thispagestyle{plain}\setcounter{page}{\abstractEnglishPage}}
+% Abstract-pt page numbering
+\newcommand {\abstractPortuguesePageNumber} {\thispagestyle{plain}\setcounter{page}{\abstractPortuguesePage}}
 % Section numbering depth
 \setcounter{secnumdepth}{2}
 % Table of contents depth
@@ -47,42 +53,43 @@
 \input{variables.tex}
 
 \include{cover}
+\NewPage
 
 \pagenumbering{roman}
 
 \if\includeAcknowledgments 1
-\cleardoublepage
 \input{acknowledgments/acknowledgments.tex}
+\NewPage
 \fi
 
-\cleardoublepage
 \include{abstract/abstract-en}
-\cleardoublepage
+\NewPage
 \include{abstract/abstract-pt}
+\NewPage
 
 % Table of contents
-\cleardoublepage
 \tableofcontents
+% A new page is necessary only if table of contents has an even number of pages
+\NewPage
 
 % List of tables
-\cleardoublepage
-\pagenumbering{arabic}% Arabic page numbers (and reset to 1)
 \addcontentsline{toc}{chapter}{\listtablename}
 \listoftables
+\NewPage
 
 % List of figures
-\cleardoublepage
 \addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures
+\NewPage
 
 % List of acronyms
-\cleardoublepage
 \printglossary[type=\acronymtype]
+\NewPage
 
-\cleardoublepage
+\pagenumbering{arabic}% Arabic page numbers (and reset to 1)
+
 \input{chapters/main.tex}
 
-\cleardoublepage
 \bibliographystyle{ieeetr}
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{bibliography/dissertation}
