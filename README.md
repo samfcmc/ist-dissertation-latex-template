@@ -159,6 +159,15 @@ Since this is not mandatory, by default, it is not being included. If you want t
 \def \includeGlossary{1}
 ```
 
+### Add extra stuff to the preamble
+Some thesis require more packages or you might want to define your own commands.
+Instead of adding stuff to the `dissertation.tex` file you can use the `extra_stuff.tex` file.
+Here you can add everthing you need.
+For instance, if you want to use [minted](https://github.com/gpoore/minted) package to have syntax highlight for code snippets, you can introduce the needed `usepackage` to this file. Like this:
+```latex
+\usepackage{minted}
+```
+
 ## Compile
 You have some ways to create the final pdf:
 
