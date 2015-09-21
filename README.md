@@ -188,7 +188,7 @@ $ sh clean.sh
 ```
 
 ### Using Grunt
-Using Grunt is option, but if you choose to use these option you will make the development of you document much more efficient, since that each time that a ``.tex`` file is saved, the whole document is compiled again. The requirements to use Grunt are:
+Using Grunt is optional, but if you choose to use these option you will make the development of you document much more efficient, since that each time that a ``.tex`` file is saved, the whole document is compiled again. The requirements to use Grunt are:
 
 - [NodeJS](https://nodejs.org/)
 - [NPM](https://www.npmjs.com/)
