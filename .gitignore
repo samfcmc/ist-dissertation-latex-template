@@ -35,3 +35,9 @@ dissertation.pdf
 *.fls
 images/ist_logo-eps-converted-to.pdf
 node_modules
+
+# Overleaf stuff
+*.js
+LICENSE
+Makefile
+*.sh
