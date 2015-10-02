@@ -62,6 +62,11 @@ Some thesis have two advisors instead of just one. If this is your case, open th
 \def \HasCoAdvisor{1}
 ```
 
+Then, edit his/her name in the same file `variables.tex`:
+```latex
+\newcommand {\CoAdvisor} {{\large Prof./Dr. Co Advisor}}
+```
+
 ### Thesis Final Version
 There are committee members and a chairperson in the defense of your thesis.
 However, you don't know who they are before the presentation.
