@@ -54,6 +54,35 @@ This file has the cover's layout.
 The values of title, subtitle, etc are defined in a file called ```variables.tex```.
 Edit that file according to what makes sense in your dissertation.
 
+### Co-advisor name
+Some thesis have two advisors instead of just one. If this is your case, open the `variables.tex` file and look for a variable named `HasCoAdvisor` and change its value from `0` to `1` like this:
+```latex
+% You had a co-advisor:
+% if you only had one advisor change \HasCoAdvisor{1} to \HasCoAdvisor{0}
+\def \HasCoAdvisor{1}
+```
+
+### Thesis Final Version
+There are committee members and a chairperson in the defense of your thesis.
+However, you don't know who they are before the presentation.
+The version that you deliver after the presentation is the final one and has this information that was missing before.
+To have this information in your thesis cover,
+open `variables.tex` file and edit the names of the `Committee Members` and `ChairPerson`:
+```latex
+% After the thesis defense
+\newcommand {\CommitteeMembers} {
+{\large Prof./Dr. Lorem Ipsum}\\
+{\large Prof./Dr. Lorem Ipsum}
+}
+\newcommand {\Chairperson} {{\large Prof./Dr. Lorem Ipsum}}
+```
+
+Then, in the same file, `variables.tex`change the value of `IsFinalVersion` from `0` to `1`:
+```latex
+% Is final version (will include Committee Members information)
+\def \IsFinalVersion{1}
+```
+
 ### Abstract
 According to the specification you have to write the abstract in english and portuguese.
 The english is located at ```abstract/abstract-en.tex``` and the portuguese ```abstract/abstract-pt.tex```.

@@ -14,12 +14,18 @@
 \def \includeGlossary{0}
 
 % Examination Committee
-\newcommand {\Chairperson} {{\large Prof./Dr. Lorem Ipsum}}
 \newcommand {\Advisor} {{\large Prof./Dr. Lorem Ipsum}}
+\newcommand {\CoAdvisor} {{\large Prof./Dr. Co Advisor}}
+
+% After the thesis defense
 \newcommand {\CommitteeMembers} {
 {\large Prof./Dr. Lorem Ipsum}\\
 {\large Prof./Dr. Lorem Ipsum}
 }
+\newcommand {\Chairperson} {{\large Prof./Dr. Lorem Ipsum}}
+
+% Is final version (will include Committee Members information)
+\def \IsFinalVersion{0}
 
 % Date
 \newcommand {\Month} {October}
@@ -33,5 +39,8 @@
 
 % Abstract-pt page number
 \def \abstractPortuguesePage{5}
+
+% You had a co-advisor:
+\def \HasCoAdvisor{0}
 
 % You can define your own variables here

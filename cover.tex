@@ -53,16 +53,30 @@
 {\Large \textbf{Examination Committee}}\\[.25cm]
 \begin{minipage}[t]{.5\textwidth}
   \begin{flushright}
+    \if\IsFinalVersion 1
     {\large Chairperson:\:}\\
+    \fi
     {\large Advisor:\:}\\
+    \if\HasCoAdvisor 1
+    {\large Co-Advisor:}\\
+    \fi
+    \if\IsFinalVersion 1
     {\large Members of the Committee:\:}
+    \fi
   \end{flushright}
 \end{minipage}%
 \begin{minipage}[t]{.5\textwidth}
   \begin{flushleft}
+    \if\IsFinalVersion 1
     {\Chairperson}\\
+    \fi
     {\Advisor}\\
+    \if\HasCoAdvisor 1
+    {\CoAdvisor}\\
+    \fi
+    \if\IsFinalVersion
     {\CommitteeMembers}
+    \fi
   \end{flushleft}
 \end{minipage}\\[1.0cm]
 
