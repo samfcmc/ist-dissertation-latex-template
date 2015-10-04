@@ -7,7 +7,14 @@
 % ---------------------------------------------------------
 %  INSTITUTION LOGO
 % ---------------------------------------------------------
-\includegraphics[width=5cm]{images/ist_logo}~\\[2.0cm]
+\includegraphics[width=5cm]{images/ist_logo}~\\
+%
+\if\IsFinalVersion 1
+  \vspace*{\finalLogoSpacing}
+\else
+  \vspace*{\draftLogoSpacing}
+\fi
+
 \begin{center}
 % ---------------------------------------------------------
 %  MASTER THESIS DISSERTATION TITLE
@@ -42,14 +49,21 @@
   \begin{flushleft}
     {\Supervisors}
   \end{flushleft}
-\end{minipage}\\[1.0cm]
-
+\end{minipage}\\
+%
+\if\IsFinalVersion 1
+  \vspace*{\finalAdvisorsSpacing}
+\else
+  \vspace*{\draftAdvisorsSpacing}
+\fi
 % ---------------------------------------------------------
 %  JURI NAMES:
 %  - PRESIDENT
 %  - ADVISOR
 %  - VOGALS
 % ---------------------------------------------------------
+\if\IsFinalVersion 1
+%
 {\Large \textbf{Examination Committee}}\\[.25cm]
 \begin{minipage}[t]{.5\textwidth}
   \begin{flushright}
@@ -79,6 +93,12 @@
     \fi
   \end{flushleft}
 \end{minipage}\\[1.0cm]
+%
+\fi
+
+\if\IsFinalVersion 1
+ \vspace*{\dateSpacing}
+\fi
 
 % ---------------------------------------------------------
 %  DATE (MONTH AND YEAR)
