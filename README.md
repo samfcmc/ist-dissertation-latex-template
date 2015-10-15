@@ -4,6 +4,10 @@ If you are a student in IST and you want to write your dissertation using Latex,
 This template tries to follow this school's specification that you can get here:
 * [Dissertation guidelines](http://da.tecnico.ulisboa.pt/files/sites/33/guia-preparacao-dissertacao-13_14_2.pdf)
 
+The instructions to submit your dissertation at IST are available in the following link:
+* [Delivery instructions](https://fenix.tecnico.ulisboa.pt/downloadFile/845043405434871/MEIC-como%20submeter%20a%20dissertacao-v2.pptx.pdf)
+Sorry but it is only available in portuguese :(
+
 I cannot guarantee you that this template is 100% right.
 I recommend that you talk to your advisors to check it first.
 I am not responsible for something going wrong, if you choose to use this template.
