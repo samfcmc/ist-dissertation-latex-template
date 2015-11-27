@@ -16,7 +16,7 @@ Focus on your thesis and not on the template.
 
 ## Requirements:
 * Latex: This will depend on your Operating System. You have to check how to install all Latex packages for your OS.
-**Note:** Make sure that version of Latex version that you are installing is the latest one.
+**Note:** Make sure that the version of Latex that you are installing is the latest one.
 * Any text editor (I use [Atom](https://atom.io/))
 * Latex plugins for your text editor (this is optional, but it will make your life easier).
 I use the following ones for Atom:
