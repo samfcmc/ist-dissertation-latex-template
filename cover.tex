@@ -40,12 +40,14 @@
 % -----------------------------------------------------------------
 %  ADVISORS NAME
 % ---------------------------------------------------------
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[t]{.4\textwidth}
+  \center
   \begin{flushright}
-    {\large Advisor(s)/Supervisor(s):\:}
+    {\large Supervisors:~~}
   \end{flushright}
 \end{minipage}%
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[t]{.6\textwidth}
+  \center
   \begin{flushleft}
     {\Supervisors}
   \end{flushleft}
@@ -62,39 +64,19 @@
 %  - ADVISOR
 %  - VOGALS
 % ---------------------------------------------------------
+%
 \if\IsFinalVersion 1
 %
-{\Large \textbf{Examination Committee}}\\[.25cm]
-\begin{minipage}[t]{.5\textwidth}
-  \begin{flushright}
-    \if\IsFinalVersion 1
-    {\large Chairperson:\:}\\
-    \fi
-    {\large Advisor:\:}\\
-    \if\HasCoAdvisor 1
-    {\large Co-Advisor:}\\
-    \fi
-    \if\IsFinalVersion 1
-    {\large Members of the Committee:\:}
-    \fi
-  \end{flushright}
-\end{minipage}%
-\begin{minipage}[t]{.5\textwidth}
-  \begin{flushleft}
-    \if\IsFinalVersion 1
-    {\Chairperson}\\
-    \fi
-    {\Advisor}\\
-    \if\HasCoAdvisor 1
-    {\CoAdvisor}\\
-    \fi
-    \if\IsFinalVersion 1
-    {\CommitteeMembers}
-    \fi
-  \end{flushleft}
+\begin{minipage}[t]{1\textwidth}
+  \center
+  {\Large \textbf{Examination Committee}}\\[.25cm]
+  {\large Chairperson: \Chairperson}\\
+  {\large Supervisor: \Advisor}\\
+  {\large Member of the Committee: \CommitteeMembers}
 \end{minipage}\\[1.0cm]
 %
 \fi
+%
 
 \if\IsFinalVersion 1
  \vspace*{\dateSpacing}
